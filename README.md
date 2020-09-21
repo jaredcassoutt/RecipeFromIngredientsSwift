@@ -9,4 +9,4 @@ If you wish to clone this project and run on your own device:
   2. Replace the apiKey property within the Networking Class with your own API Key using the link above.
   3. Enjoy!
 
-![](appdemo.GIF)
+![](appdemo.gif)
