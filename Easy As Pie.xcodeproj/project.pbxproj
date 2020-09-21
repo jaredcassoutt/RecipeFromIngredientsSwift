@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0B9A9482516EB7C003645F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9472516EB7C003645F2 /* AppDelegate.swift */; };
+		D0B9A94C2516EB7C003645F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A94B2516EB7C003645F2 /* ViewController.swift */; };
+		D0B9A94F2516EB7C003645F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B9A94D2516EB7C003645F2 /* Main.storyboard */; };
+		D0B9A9542516EB80003645F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B9A9532516EB80003645F2 /* Assets.xcassets */; };
+		D0B9A9572516EB80003645F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B9A9552516EB80003645F2 /* LaunchScreen.storyboard */; };
+		D0B9A9622516EB81003645F2 /* Easy_As_PieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9612516EB81003645F2 /* Easy_As_PieTests.swift */; };
+		D0B9A96D2516EB81003645F2 /* Easy_As_PieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A96C2516EB81003645F2 /* Easy_As_PieUITests.swift */; };
+		D0B9A97B2516EBA5003645F2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A97A2516EBA5003645F2 /* Networking.swift */; };
+		D0B9A97D2516F695003645F2 /* RecipieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A97C2516F695003645F2 /* RecipieData.swift */; };
+		D0B9A97F2517E6F5003645F2 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A97E2517E6F5003645F2 /* MenuItemTableViewCell.swift */; };
+		D0B9A9842517EBD1003645F2 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9832517EBD1003645F2 /* LocalData.swift */; };
+		D0B9A9862517EC6E003645F2 /* Recipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9852517EC6E003645F2 /* Recipie.swift */; };
+		D0B9A9882517F648003645F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9872517F648003645F2 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0B9A95E2516EB80003645F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B9A93C2516EB7C003645F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B9A9432516EB7C003645F2;
+			remoteInfo = "Easy As Pie";
+		};
+		D0B9A9692516EB81003645F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B9A93C2516EB7C003645F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B9A9432516EB7C003645F2;
+			remoteInfo = "Easy As Pie";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0B9A9442516EB7C003645F2 /* Easy As Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy As Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B9A9472516EB7C003645F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0B9A94B2516EB7C003645F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0B9A94E2516EB7C003645F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0B9A9532516EB80003645F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0B9A9562516EB80003645F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0B9A9582516EB80003645F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B9A95D2516EB80003645F2 /* Easy As PieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy As PieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B9A9612516EB81003645F2 /* Easy_As_PieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_As_PieTests.swift; sourceTree = "<group>"; };
+		D0B9A9632516EB81003645F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B9A9682516EB81003645F2 /* Easy As PieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy As PieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B9A96C2516EB81003645F2 /* Easy_As_PieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_As_PieUITests.swift; sourceTree = "<group>"; };
+		D0B9A96E2516EB81003645F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B9A97A2516EBA5003645F2 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D0B9A97C2516F695003645F2 /* RecipieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipieData.swift; sourceTree = "<group>"; };
+		D0B9A97E2517E6F5003645F2 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		D0B9A9832517EBD1003645F2 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		D0B9A9852517EC6E003645F2 /* Recipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipie.swift; sourceTree = "<group>"; };
+		D0B9A9872517F648003645F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../Recycle Rewards/Recycle Rewards/SceneDelegate.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0B9A9412516EB7C003645F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A95A2516EB80003645F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A9652516EB81003645F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0B9A93B2516EB7C003645F2 = {
+			isa = PBXGroup;
+			children = (
+				D0B9A9462516EB7C003645F2 /* Easy As Pie */,
+				D0B9A9602516EB80003645F2 /* Easy As PieTests */,
+				D0B9A96B2516EB81003645F2 /* Easy As PieUITests */,
+				D0B9A9452516EB7C003645F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0B9A9452516EB7C003645F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A9442516EB7C003645F2 /* Easy As Pie.app */,
+				D0B9A95D2516EB80003645F2 /* Easy As PieTests.xctest */,
+				D0B9A9682516EB81003645F2 /* Easy As PieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B9A9462516EB7C003645F2 /* Easy As Pie */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A9472516EB7C003645F2 /* AppDelegate.swift */,
+				D0B9A9872517F648003645F2 /* SceneDelegate.swift */,
+				D0B9A9812517EB1C003645F2 /* UI */,
+				D0B9A9822517EB56003645F2 /* Storyboards */,
+				D0B9A9802517E702003645F2 /* Model */,
+				D0B9A9532516EB80003645F2 /* Assets.xcassets */,
+				D0B9A9582516EB80003645F2 /* Info.plist */,
+			);
+			path = "Easy As Pie";
+			sourceTree = "<group>";
+		};
+		D0B9A9602516EB80003645F2 /* Easy As PieTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A9612516EB81003645F2 /* Easy_As_PieTests.swift */,
+				D0B9A9632516EB81003645F2 /* Info.plist */,
+			);
+			path = "Easy As PieTests";
+			sourceTree = "<group>";
+		};
+		D0B9A96B2516EB81003645F2 /* Easy As PieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A96C2516EB81003645F2 /* Easy_As_PieUITests.swift */,
+				D0B9A96E2516EB81003645F2 /* Info.plist */,
+			);
+			path = "Easy As PieUITests";
+			sourceTree = "<group>";
+		};
+		D0B9A9802517E702003645F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A97A2516EBA5003645F2 /* Networking.swift */,
+				D0B9A97C2516F695003645F2 /* RecipieData.swift */,
+				D0B9A9832517EBD1003645F2 /* LocalData.swift */,
+				D0B9A9852517EC6E003645F2 /* Recipie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0B9A9812517EB1C003645F2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A94B2516EB7C003645F2 /* ViewController.swift */,
+				D0B9A97E2517E6F5003645F2 /* MenuItemTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D0B9A9822517EB56003645F2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A94D2516EB7C003645F2 /* Main.storyboard */,
+				D0B9A9552516EB80003645F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0B9A9432516EB7C003645F2 /* Easy As Pie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B9A9712516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As Pie" */;
+			buildPhases = (
+				D0B9A9402516EB7C003645F2 /* Sources */,
+				D0B9A9412516EB7C003645F2 /* Frameworks */,
+				D0B9A9422516EB7C003645F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy As Pie";
+			productName = "Easy As Pie";
+			productReference = D0B9A9442516EB7C003645F2 /* Easy As Pie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0B9A95C2516EB80003645F2 /* Easy As PieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B9A9742516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As PieTests" */;
+			buildPhases = (
+				D0B9A9592516EB80003645F2 /* Sources */,
+				D0B9A95A2516EB80003645F2 /* Frameworks */,
+				D0B9A95B2516EB80003645F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0B9A95F2516EB80003645F2 /* PBXTargetDependency */,
+			);
+			name = "Easy As PieTests";
+			productName = "Easy As PieTests";
+			productReference = D0B9A95D2516EB80003645F2 /* Easy As PieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0B9A9672516EB81003645F2 /* Easy As PieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B9A9772516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As PieUITests" */;
+			buildPhases = (
+				D0B9A9642516EB81003645F2 /* Sources */,
+				D0B9A9652516EB81003645F2 /* Frameworks */,
+				D0B9A9662516EB81003645F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0B9A96A2516EB81003645F2 /* PBXTargetDependency */,
+			);
+			name = "Easy As PieUITests";
+			productName = "Easy As PieUITests";
+			productReference = D0B9A9682516EB81003645F2 /* Easy As PieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0B9A93C2516EB7C003645F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Jared Cassoutt";
+				TargetAttributes = {
+					D0B9A9432516EB7C003645F2 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D0B9A95C2516EB80003645F2 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D0B9A9432516EB7C003645F2;
+					};
+					D0B9A9672516EB81003645F2 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D0B9A9432516EB7C003645F2;
+					};
+				};
+			};
+			buildConfigurationList = D0B9A93F2516EB7C003645F2 /* Build configuration list for PBXProject "Easy As Pie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0B9A93B2516EB7C003645F2;
+			productRefGroup = D0B9A9452516EB7C003645F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B9A9432516EB7C003645F2 /* Easy As Pie */,
+				D0B9A95C2516EB80003645F2 /* Easy As PieTests */,
+				D0B9A9672516EB81003645F2 /* Easy As PieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0B9A9422516EB7C003645F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B9A9572516EB80003645F2 /* LaunchScreen.storyboard in Resources */,
+				D0B9A9542516EB80003645F2 /* Assets.xcassets in Resources */,
+				D0B9A94F2516EB7C003645F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A95B2516EB80003645F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A9662516EB81003645F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0B9A9402516EB7C003645F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B9A94C2516EB7C003645F2 /* ViewController.swift in Sources */,
+				D0B9A9862517EC6E003645F2 /* Recipie.swift in Sources */,
+				D0B9A9482516EB7C003645F2 /* AppDelegate.swift in Sources */,
+				D0B9A97F2517E6F5003645F2 /* MenuItemTableViewCell.swift in Sources */,
+				D0B9A9842517EBD1003645F2 /* LocalData.swift in Sources */,
+				D0B9A97D2516F695003645F2 /* RecipieData.swift in Sources */,
+				D0B9A97B2516EBA5003645F2 /* Networking.swift in Sources */,
+				D0B9A9882517F648003645F2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A9592516EB80003645F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B9A9622516EB81003645F2 /* Easy_As_PieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B9A9642516EB81003645F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B9A96D2516EB81003645F2 /* Easy_As_PieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0B9A95F2516EB80003645F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B9A9432516EB7C003645F2 /* Easy As Pie */;
+			targetProxy = D0B9A95E2516EB80003645F2 /* PBXContainerItemProxy */;
+		};
+		D0B9A96A2516EB81003645F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B9A9432516EB7C003645F2 /* Easy As Pie */;
+			targetProxy = D0B9A9692516EB81003645F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0B9A94D2516EB7C003645F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B9A94E2516EB7C003645F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0B9A9552516EB80003645F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B9A9562516EB80003645F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0B9A96F2516EB81003645F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0B9A9702516EB81003645F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0B9A9722516EB81003645F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As Pie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-Pie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0B9A9732516EB81003645F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As Pie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-Pie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0B9A9752516EB81003645F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As PieTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-PieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy As Pie.app/Easy As Pie";
+			};
+			name = Debug;
+		};
+		D0B9A9762516EB81003645F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As PieTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-PieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy As Pie.app/Easy As Pie";
+			};
+			name = Release;
+		};
+		D0B9A9782516EB81003645F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As PieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-PieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Easy As Pie";
+			};
+			name = Debug;
+		};
+		D0B9A9792516EB81003645F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L56DRQ363;
+				INFOPLIST_FILE = "Easy As PieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JaredCassoutt.Easy-As-PieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Easy As Pie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0B9A93F2516EB7C003645F2 /* Build configuration list for PBXProject "Easy As Pie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B9A96F2516EB81003645F2 /* Debug */,
+				D0B9A9702516EB81003645F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B9A9712516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As Pie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B9A9722516EB81003645F2 /* Debug */,
+				D0B9A9732516EB81003645F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B9A9742516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As PieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B9A9752516EB81003645F2 /* Debug */,
+				D0B9A9762516EB81003645F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B9A9772516EB81003645F2 /* Build configuration list for PBXNativeTarget "Easy As PieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B9A9782516EB81003645F2 /* Debug */,
+				D0B9A9792516EB81003645F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0B9A93C2516EB7C003645F2 /* Project object */;
+}
