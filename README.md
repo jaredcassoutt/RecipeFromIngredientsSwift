@@ -6,7 +6,7 @@ The data for this project is obtained using the [Spoonacular API](https://spoona
 
 If you wish to clone this project and run on your own device:
   1. Navigate to the Networking.swift file
-  2. Replace the apiKey property within the Networking Class with your own API Key using the link above.
+  2. Replace the apiKey property within the Networking class with your own API Key using the link above.
   3. Enjoy!
 
 ![](appdemo.gif)
