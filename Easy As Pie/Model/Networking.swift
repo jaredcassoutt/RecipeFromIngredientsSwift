@@ -10,7 +10,7 @@ import Foundation
 
 class Networking {
     
-    let apiKey = "4ab7973701d04889b2b7c6262d2eb8d3"
+    let apiKey = ""
     
     func fetchRecipies(ingredients: String, loadNumber: Int, success:@escaping (_ data:[recipies])->(),failure:@escaping (_ error:Error)->()) {
         let ingredientsArray = ingredients.components(separatedBy: ",")
