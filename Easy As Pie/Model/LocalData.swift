@@ -12,4 +12,8 @@ class LocalData {
         static var recipieList = [Recipie]()
         static var counter = 0
     }
+    struct selected {
+        static var recipeID = 0
+        static var recipeInfo = DetailedRecipe(title: "", image: "", readyInMinutes: 0, extendedIngredients: [String]())
+    }
 }

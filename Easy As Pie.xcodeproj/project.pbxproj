@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0426C99252661F200AD1B1E /* ItemIngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0426C98252661F200AD1B1E /* ItemIngredientsTableViewCell.swift */; };
+		D0426CA12526620300AD1B1E /* ItemInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0426CA02526620300AD1B1E /* ItemInformationTableViewCell.swift */; };
+		D0426CA6252665D700AD1B1E /* RecipeInformaiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0426CA5252665D700AD1B1E /* RecipeInformaiton.swift */; };
+		D0426CB125266BE200AD1B1E /* ItemImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0426CB025266BE200AD1B1E /* ItemImageTableViewCell.swift */; };
+		D0426CB925266DA400AD1B1E /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0426CB825266DA400AD1B1E /* ItemViewController.swift */; };
 		D0B9A9482516EB7C003645F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A9472516EB7C003645F2 /* AppDelegate.swift */; };
 		D0B9A94C2516EB7C003645F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9A94B2516EB7C003645F2 /* ViewController.swift */; };
 		D0B9A94F2516EB7C003645F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B9A94D2516EB7C003645F2 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0426C98252661F200AD1B1E /* ItemIngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemIngredientsTableViewCell.swift; sourceTree = "<group>"; };
+		D0426CA02526620300AD1B1E /* ItemInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInformationTableViewCell.swift; sourceTree = "<group>"; };
+		D0426CA5252665D700AD1B1E /* RecipeInformaiton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInformaiton.swift; sourceTree = "<group>"; };
+		D0426CB025266BE200AD1B1E /* ItemImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageTableViewCell.swift; sourceTree = "<group>"; };
+		D0426CB825266DA400AD1B1E /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		D0B9A9442516EB7C003645F2 /* Easy As Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy As Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B9A9472516EB7C003645F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0B9A94B2516EB7C003645F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +96,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0426C96252661A000AD1B1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A94B2516EB7C003645F2 /* ViewController.swift */,
+				D0426CB825266DA400AD1B1E /* ItemViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D0426C97252661B800AD1B1E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D0B9A97E2517E6F5003645F2 /* MenuItemTableViewCell.swift */,
+				D0426C98252661F200AD1B1E /* ItemIngredientsTableViewCell.swift */,
+				D0426CA02526620300AD1B1E /* ItemInformationTableViewCell.swift */,
+				D0426CB025266BE200AD1B1E /* ItemImageTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		D0B9A93B2516EB7C003645F2 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +175,7 @@
 				D0B9A97C2516F695003645F2 /* RecipieData.swift */,
 				D0B9A9832517EBD1003645F2 /* LocalData.swift */,
 				D0B9A9852517EC6E003645F2 /* Recipie.swift */,
+				D0426CA5252665D700AD1B1E /* RecipeInformaiton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,8 +183,8 @@
 		D0B9A9812517EB1C003645F2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D0B9A94B2516EB7C003645F2 /* ViewController.swift */,
-				D0B9A97E2517E6F5003645F2 /* MenuItemTableViewCell.swift */,
+				D0426C96252661A000AD1B1E /* ViewControllers */,
+				D0426C97252661B800AD1B1E /* TableViewCells */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -230,7 +261,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Jared Cassoutt";
 				TargetAttributes = {
 					D0B9A9432516EB7C003645F2 = {
@@ -299,13 +330,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B9A94C2516EB7C003645F2 /* ViewController.swift in Sources */,
+				D0426CA12526620300AD1B1E /* ItemInformationTableViewCell.swift in Sources */,
 				D0B9A9862517EC6E003645F2 /* Recipie.swift in Sources */,
+				D0426CB925266DA400AD1B1E /* ItemViewController.swift in Sources */,
 				D0B9A9482516EB7C003645F2 /* AppDelegate.swift in Sources */,
 				D0B9A97F2517E6F5003645F2 /* MenuItemTableViewCell.swift in Sources */,
 				D0B9A9842517EBD1003645F2 /* LocalData.swift in Sources */,
 				D0B9A97D2516F695003645F2 /* RecipieData.swift in Sources */,
 				D0B9A97B2516EBA5003645F2 /* Networking.swift in Sources */,
+				D0426C99252661F200AD1B1E /* ItemIngredientsTableViewCell.swift in Sources */,
+				D0426CA6252665D700AD1B1E /* RecipeInformaiton.swift in Sources */,
 				D0B9A9882517F648003645F2 /* SceneDelegate.swift in Sources */,
+				D0426CB125266BE200AD1B1E /* ItemImageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +422,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -446,6 +483,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
